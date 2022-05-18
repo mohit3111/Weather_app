@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#news">More Projects</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+              
+        </nav>
+        <div class="masterBox">
+        <div class="weatherBox">
+            <div class="input">
+                <input type="text" id="inputBox" class="inputBox" placeholder="Enter City Name..." autocomplete="off">
+            </div>
+            <div class="weather">
+                <div  class="city"  id="city1"></div>
+                <div class="date"  id="date"></div>
+                <div class="temprature"  id="temprature"></div>
+                <div class="max"  id="max"></div>
+                <div class="clear"  id="clear"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        <script src="script.js"></script>
+</body>
+</html>
